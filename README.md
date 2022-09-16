@@ -6,7 +6,7 @@ Hello im Xenijo and im the developer of this simple Utility script
 ------
 Loadinstring:
 ```
-local Utility = loadstring(game:HttpGet("https://raw.githubusercontent.com/Xenijo/XenWare-Utility/main/Main"))()
+local Utility = loadstring(game:HttpGet("https://raw.githubusercontent.com/Xenijo/XenWare-Utility/main/Main.lua"))()
 ```
 
 FireClick: 
