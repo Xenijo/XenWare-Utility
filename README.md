@@ -23,5 +23,4 @@ Utility:prompt(path,Matss)
 Example Usage:
 ```Utility:prompt(game.Workspace.proximitypromt,math.huge)```
 --------
-
-Hello its me i dont have time to finish this rn so pls wait 
+ I dont have enought time to finish this 
