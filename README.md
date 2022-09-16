@@ -23,4 +23,9 @@ Utility:prompt(path,Matss)
 Example Usage:
 ```Utility:prompt(game.Workspace.proximitypromt,math.huge)```
 --------
+```
+Utility:Reset()
+```
+Example Usage: ```if level>100 then Utility:Reset() end```
+------------
  I dont have enought time to finish this 
