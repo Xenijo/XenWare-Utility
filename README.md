@@ -1,3 +1,5 @@
+```Status: DOWN```
+---------
 Hello im Xenijo and im the developer of this simple Utility script 
 
 
