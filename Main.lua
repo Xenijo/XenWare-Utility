@@ -42,7 +42,7 @@ if hum.Health >0 then
     print("Player Status: Alive")
     Status = true
     return true 
-elseif hum.Health<0 then 
+else 
 
 print("Player Status: Dead")
 Status = false 
