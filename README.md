@@ -48,4 +48,9 @@ Utility:IsAlive()
 ```
 Example Usage: ```if Utility:IsAlive() then Reset()```
 ---------
+```
+Utility:GetCharacter(plr)
+```
+Example Usage: ```if Utility:GetCharacter(game.Players.LocalPlayer)then Reset()```
+-------
  I dont have enought time to finish this 
