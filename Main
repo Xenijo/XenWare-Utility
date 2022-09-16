@@ -154,7 +154,7 @@ function Utility:Music(Id,volume,looped)
   local Part = Instance.new("Sound")
   Part.Parent = SoundService
   Part.SoundId = "rbxassetid://"..Id
-  Part.Looped = false or looped
+  Part.Looped = looped or false
   Part.Name = "Xenware-Utility"
   Part.Volume = volume or 0.5 
   Part.Playing = true 
