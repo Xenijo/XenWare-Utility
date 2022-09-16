@@ -58,4 +58,9 @@ Utility:GetHumanoid(plr)
 ```
 Example Usage: ```if Utility:GetHumanoid(game.Players.LocalPlayer.Character.HumanoidRootPart)then setspeed(200)```
 --------
- I dont have enought time to finish this 
+```
+Utility:Tween(instance, duration, properties, waituntildone, optionalproperties)
+```
+Example Usage: ```Utility:Tween(game.Workspace.Part, 5,, true --waits until tween done before continues, Enum.EasingDirection.Out, Enum.EasingStyle.Linear)```
+-----
+
