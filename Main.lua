@@ -42,7 +42,7 @@ if hum.Health >0 then
     print("Player Status: Alive")
     Status = true
     return true 
-else 
+else
 
 print("Player Status: Dead")
 Status = false 
@@ -159,5 +159,15 @@ function Utility:Music(Id,volume,looped)
   Part.Volume = volume or 0.5 
   Part.Playing = true 
 end
+
+
+
+function Utility:Anch()
+localRoot.Anchored = true 
+end
+
+function Utility:unAnch()
+  localRoot.Anchored = false 
+  end
 
 return Utility
