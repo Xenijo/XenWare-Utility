@@ -43,4 +43,9 @@ Utility:setjump(value)
 ```
 Example Usage: ```Utility:setjump(200)```
 --------
+```
+Utility:IsAlive()
+```
+Example Usage: ```if Utility:IsAlive() then Reset()```
+---------
  I dont have enought time to finish this 
