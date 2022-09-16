@@ -56,6 +56,6 @@ Example Usage: ```if Utility:GetCharacter(game.Players.LocalPlayer)then Reset()`
 ```
 Utility:GetHumanoid(plr)
 ```
-Example Usage: ```if Utility:GetHumanoid(game.Players.LocalPlayer.Character)then setspeed(200)```
+Example Usage: ```if Utility:GetHumanoid(game.Players.LocalPlayer.Character.HumanoidRootPart)then setspeed(200)```
 --------
  I dont have enought time to finish this 
