@@ -28,4 +28,9 @@ Utility:Reset()
 ```
 Example Usage: ```if level>100 then Utility:Reset() end```
 ------------
+```
+Utility:BypassReset()
+```
+Example Usage:```if level>100 then Utility:BypassReset()end --Not working at the moment```
+----
  I dont have enought time to finish this 
