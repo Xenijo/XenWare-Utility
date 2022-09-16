@@ -7,5 +7,5 @@ Loadinstring:
 
 FireClick: ```Utility:Click(path,Mats)```
 Example Usage
-Utility:Click(game.Workspace.Clickme,math.huge)
+```Utility:Click(game.Workspace.Clickme,math.huge)```
 
