@@ -73,3 +73,13 @@ Utility:Httpspy()
 ```
 Example Usage: ```if Mausebutton1down then Utility:Httpspy()end```
 -----------
+```
+Utility:loopbringall(range)
+```
+Example Usage: ```Utility:loopbringall(0)```
+----------
+```
+Utility:unloopbringall()
+```
+Example Usage: ```if not IsAlive() then Utility:unloopbringall()end ```
+--------
