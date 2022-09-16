@@ -63,4 +63,9 @@ Utility:Tween(instance, duration, properties, waituntildone, optionalproperties)
 ```
 Example Usage: ```Utility:Tween(game.Workspace.Part, 5,, true --waits until tween done before continues, Enum.EasingDirection.Out, Enum.EasingStyle.Linear)```
 -----
-
+```
+Utility:MagTeleport(pos, tpspeed, who)
+```
+Example Usage : ```Utility:MagTeleport(game.Workspace.Part, 5--higher = faster, RootPart or game.Players.LocalPlayer.Character.HumanoidRootPart)```
+-------
+sawd
