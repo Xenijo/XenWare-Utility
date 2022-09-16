@@ -68,4 +68,8 @@ Utility:MagTeleport(pos, tpspeed, who)
 ```
 Example Usage : ```Utility:MagTeleport(game.Workspace.Part, 5--higher = faster, RootPart or game.Players.LocalPlayer.Character.HumanoidRootPart)```
 -------
-sawd
+```
+Utility:Httpspy()
+```
+Example Usage: ```if Mausebutton1down then Utility:Httpspy()end```
+-----------
