@@ -7,7 +7,8 @@ Loadinstring:
 local Utility = loadstring(game:HttpGet("https://raw.githubusercontent.com/Xenijo/XenWare-Utility/main/Main"))()
 ```
 
-FireClick: ```
+FireClick: 
+```
 Utility:Click(path,Mats)
 ```
 Example Usage
