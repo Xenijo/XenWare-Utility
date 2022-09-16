@@ -83,3 +83,12 @@ Utility:unloopbringall()
 ```
 Example Usage: ```if not IsAlive() then Utility:unloopbringall()end ```
 --------
+```
+Utility:test()
+```
+Example Usage: ```Utility:test()--Prints test```
+--------
+```
+Utility:Music(Id,volume,looped)
+```
+Example Usage: ```Utility:Music(9116652038,0.5,true)```
