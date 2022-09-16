@@ -38,4 +38,9 @@ Utility:setspeed(value)
 ```
 Example Usage: ```setspeed(200)```
 ---------
+```
+Utility:setjump(value)
+```
+Example Usage: ```Utility:setjump(200)```
+--------
  I dont have enought time to finish this 
