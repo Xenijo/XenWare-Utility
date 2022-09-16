@@ -31,6 +31,11 @@ Example Usage: ```if level>100 then Utility:Reset() end```
 ```
 Utility:BypassReset()
 ```
-Example Usage:```if level>100 then Utility:BypassReset()end --Not working at the moment```
+Example Usage: ```if level>100 then Utility:BypassReset()end --Not working at the moment```
 ----
+```
+Utility:setspeed(value)
+```
+Example Usage: ```setspeed(200)```
+---------
  I dont have enought time to finish this 
