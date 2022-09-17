@@ -2,7 +2,8 @@
 ---------
 Hello im Xenijo and im the developer of this simple Utility script 
 
-
+<!-- Place this tag where you want the button to render. -->
+<a class="github-button" href="https://github.com/sponsors/Xenijo" data-color-scheme="no-preference: light; light: light; dark: dark;" data-icon="octicon-heart" data-size="large" aria-label="Sponsor @Xenijo on GitHub">Sponsor</a>
 ------
 Loadinstring:
 ```
