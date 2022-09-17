@@ -5,14 +5,13 @@ local SoundService = game:GetService("SoundService")
 local lolplr =  Players.LocalPlayer
 local hum = lolplr.Character.Humanoid
 local localRoot = lolplr.Character:FindFirstChild("HumanoidRootPart")
-local IgnoreParts = {}
 getgenv().Status = nil --idk why i used that
 --//Print
 print("This Script was made with Xenijos Utility :D "..lolplr.Name.." Thx for using")
 --//Main Version 1.6.3
 
 local Utility = {}
-
+local IgnoreParts = {}
 function Utility:Click(path,Mats)
  fireclickdetector(path,Mats or math.huge)
 end
@@ -121,7 +120,6 @@ end
 
 function Utility:loopbringall(range)
      _G.LoopBring = true
-     local IgnoreParts = {}
       while _G.LoopBring == true do
     for i, v in pairs(Players:GetPlayers())  do
     if v.Character:FindFirstChild("HumanoidRootPart") then
