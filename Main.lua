@@ -50,7 +50,7 @@ end
 end
 
 
---//Took this from Hold Uts 
+--//little creds to hold
 function Utility:GetCharacter(plr)
     local plr = plr or lolplr
     local plrchar = lolplr.Character or lolplr.CharacterAdded:Wait() or lolplr.CharacterAppearence.Loaded:Wait()
@@ -121,6 +121,7 @@ end
 
 function Utility:loopbringall(range)
      _G.LoopBring = true
+     local IgnoreParts = {}
       while _G.LoopBring == true do
     for i, v in pairs(Players:GetPlayers())  do
     if v.Character:FindFirstChild("HumanoidRootPart") then
