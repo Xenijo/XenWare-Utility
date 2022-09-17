@@ -3,7 +3,7 @@
 Hello im Xenijo and im the developer of this simple Utility script 
 
 <!-- Place this tag where you want the button to render. -->
-<a class="github-button" href="https://www.patreon.com/user/membership?u=79889070" data-color-scheme="no-preference: light; light: light; dark: dark;" data-icon="octicon-heart" data-size="large" aria-label="Donate to me">Sponsor</a>
+<a class="github-button" href="https://www.patreon.com/user/membership?u=79889070" data-color-scheme="no-preference: light; light: light; dark: dark;" data-icon="octicon-heart" data-size="large" aria-label="Donate to me">Donation</a>
 ------
 Loadinstring:
 ```
