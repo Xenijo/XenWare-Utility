@@ -38,20 +38,13 @@ function Utility:setjump(value)
 hum.JumpPower = value
 end
 
-function Utility:IsAlive(print)
+function Utility:IsAlive()
 if hum.Health >0 then 
-  if print == true then 
-    print("Player Status: Alive")
- 
     Status = true
     return true 
 else
-  if print == true then 
-    print("Player Status: Dead")
- 
 Status = false 
-end
-end
+return false 
 end
 end
 
