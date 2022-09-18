@@ -6,6 +6,7 @@ local lolplr =  Players.LocalPlayer
 local hum = lolplr.Character.Humanoid
 local localRoot = lolplr.Character:FindFirstChild("HumanoidRootPart")
 local localChar = lolplr:FindFirstChild("Character")
+_G.Goofyversion = "1.6.3"
 getgenv().Status = nil --idk why i used that
 --//Print
 print("This Script was made with Xenijos Utility :D "..lolplr.Name.." Thx for using")
@@ -58,7 +59,7 @@ end
 function Utility:GetCharacter(plr)
     local plr = plr or lolplr
     local plrchar = lolplr.Character or localChar 
-    if Utility:IsAlive() then 
+    if Utility:IsAlive(false) then 
     return plrchar
     end
 end
@@ -66,7 +67,7 @@ end
 function Utility:GetHumanoid(plr)
     local plr = plr or lolplr
     local Char = Utility:GetCharacter(plr)
-    if Utility:IsAlive() then 
+    if Utility:IsAlive(false) then 
     if Char then
         return Char:WaitForChild("Humanoid") 
     end    
