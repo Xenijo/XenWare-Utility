@@ -5,13 +5,14 @@ local SoundService = game:GetService("SoundService")
 local lolplr =  Players.LocalPlayer
 local hum = lolplr.Character.Humanoid
 local localRoot = lolplr.Character:FindFirstChild("HumanoidRootPart")
+local localChar = lolplr:FindFirstChild("Character")
 getgenv().Status = nil --idk why i used that
 --//Print
 print("This Script was made with Xenijos Utility :D "..lolplr.Name.." Thx for using")
 --//Main Version 1.6.3
-
-local Utility = {}
 local IgnoreParts = {}
+local Utility = {}
+
 function Utility:Click(path,Mats)
  fireclickdetector(path,Mats or math.huge)
 end
@@ -49,31 +50,36 @@ end
 end
 
 
---// creds to hold
+--//little creds to hold
 function Utility:GetCharacter(plr)
     local plr = plr or lolplr
-    local plrchar = lolplr.Character or lolplr.CharacterAdded:Wait() or lolplr.CharacterAppearence.Loaded:Wait()
+    local plrchar = lolplr.Character or localChar 
+    if Utility:IsAlive() then 
     return plrchar
+    end
 end
 
 function Utility:GetHumanoid(plr)
     local plr = plr or lolplr
-    local Char = GetCharacter(plr)
+    local Char = Utility:GetCharacter(plr)
+    if Utility:IsAlive() then 
     if Char then
-        return Char:WaitForChild("Humanoid")
+        return Char:WaitForChild("Humanoid") 
     end    
+  end
 end
 
-function Utility:Tween(instance, duration, properties, waituntildone, optionalproperties)
+function Utility:Tween(instance, duration, goal, waituntildone, optionalproperties)
     local waituntildone = waituntildone or false
     local optionalproperties = optionalproperties or {Enum.EasingDirection.Out, Enum.EasingStyle.Linear}
-    local Tween = TweenService:Create(instance, TweenInfo.new(duration), properties, unpack(optionalproperties))
+    local Tween = TweenService:Create(instance, TweenInfo.new(duration or 5 ), goal, unpack(optionalproperties))
     Tween:Play()
     if waituntildone == true then
         Tween.Completed:Wait()
         return true
     end
 end
+
 
 function Utility:MagTeleport(pos, tpspeed, who)
     local tpspeed = tpspeed or 0
@@ -82,7 +88,7 @@ function Utility:MagTeleport(pos, tpspeed, who)
     twn:Play()
     twn.Completed:Wait()
 end
---End
+
 function Utility:Httpspy()
     --Creds to ou1z
     local g
