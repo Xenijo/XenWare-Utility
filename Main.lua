@@ -52,7 +52,7 @@ end
 function Utility:GetCharacter(plr)
     local plr = plr or lolplr
     local plrchar = lolplr.Character or localChar 
-    if Utility:IsAlive(false) then 
+    if Utility:IsAlive() then 
     return plrchar
     end
 end
@@ -60,7 +60,7 @@ end
 function Utility:GetHumanoid(plr)
     local plr = plr or lolplr
     local Char = Utility:GetCharacter(plr)
-    if Utility:IsAlive(false) then 
+    if Utility:IsAlive() then 
     if Char then
         return Char:WaitForChild("Humanoid") 
     end    
