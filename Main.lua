@@ -49,7 +49,7 @@ end
 end
 
 
---//little creds to hold
+--// creds to hold
 function Utility:GetCharacter(plr)
     local plr = plr or lolplr
     local plrchar = lolplr.Character or lolplr.CharacterAdded:Wait() or lolplr.CharacterAppearence.Loaded:Wait()
@@ -82,7 +82,7 @@ function Utility:MagTeleport(pos, tpspeed, who)
     twn:Play()
     twn.Completed:Wait()
 end
-
+--End
 function Utility:Httpspy()
     --Creds to ou1z
     local g
