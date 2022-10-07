@@ -27,7 +27,21 @@ hum.Health = 0
 end
 
 function Utility:BypassReset()
-print("soon")
+  game.Players.LocalPlayer.Character.UpperTorso:Destroy()
+    game.Players.LocalPlayer.Character.LowerTorso:Destroy()
+    game.Players.LocalPlayer.Character.RightUpperArm:Destroy()
+    game.Players.LocalPlayer.Character.RightLowerArm:Destroy()
+    game.Players.LocalPlayer.Character.RightUpperLeg:Destroy()
+    game.Players.LocalPlayer.Character.RightLowerLeg:Destroy()
+    game.Players.LocalPlayer.Character.LeftLowerArm:Destroy()
+    game.Players.LocalPlayer.Character.LeftUpperArm:Destroy()
+    game.Players.LocalPlayer.Character.LeftLowerLeg:Destroy()
+    game.Players.LocalPlayer.Character.LeftUpperLeg:Destroy()
+    game.Players.LocalPlayer.Character.LeftHand:Destroy()
+    game.Players.LocalPlayer.Character.RightHand:Destroy()
+    game.Players.LocalPlayer.Character.LeftFoot:Destroy()
+    game.Players.LocalPlayer.Character.RightFoot:Destroy()
+    game.Players.LocalPlayer.Character.Head.NeckRigAttachment:Destroy()
 end
 
 function Utility:setspeed(value)
@@ -48,7 +62,7 @@ return false
 end
 end
 
---//little creds to hold
+
 function Utility:GetCharacter(plr)
     local plr = plr or lolplr
     local plrchar = lolplr.Character or localChar 
@@ -88,7 +102,7 @@ function Utility:MagTeleport(pos, tpspeed, who)
 end
 
 function Utility:Httpspy()
-    --Creds to ou1z
+  
     local g
     g = hookfunction(game.HttpGet,function(self,url,...)
       print("HttpGet Request Sent To: "..url)
