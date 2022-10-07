@@ -187,4 +187,13 @@ function Utility:unAnch()
   localRoot.Anchored = false 
   end
 
+function Utility:Exec()
+ if ({identifyexecutor()})[1] == "Synapse X" or "Krnl" then 
+   return true 
+  else 
+  return false 
+  print("Executor NOT SUPPORTED")
+  end
+ end
+
 return Utility
