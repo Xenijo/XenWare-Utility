@@ -9,7 +9,7 @@ local localChar = lolplr:FindFirstChild("Character")
 _G.Goofyversion = "1.6.3"
 getgenv().Status = nil --idk why i used that
 --//Print
-print("This Script was made with Xenijos Utility :D "..lolplr.Name.." Thx for using")
+print("This Script was made with Xenijos Utility Version:"..Goofyversion..":D."..lolplr.Name.." Thx for using")
 --//Main Version 1.6.3
 local IgnoreParts = {}
 local Utility = {}
