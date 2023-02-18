@@ -7,7 +7,7 @@ local localRoot = lolplr.Character:FindFirstChild("HumanoidRootPart")
 local localChar = lolplr:FindFirstChild("Character")
 local OldNameCall = nil
 getgenv().SendNotifications = true
-
+local Players = {}
 local Utility = {}
 
 function Utility:Music(Id,volume,looped)
@@ -55,6 +55,13 @@ function Utility:Music(Id,volume,looped)
             Icon = "rbxassetid://6238537240",
             Duration = 5,
         })
+    end
+   end
+
+   function Utility:LocatePlayers()
+    for i,v in pairs (game.Players:GetChildren()) do 
+        table.insert(Players,v.Name)
+        print(v)
     end
    end
 
